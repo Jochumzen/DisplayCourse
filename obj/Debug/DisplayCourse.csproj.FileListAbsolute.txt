@@ -1,5 +1,6 @@
+C:\websites\dnndev.me\bin\DisplayCourse.dll.config
 C:\websites\dnndev.me\bin\DisplayCourse.dll
 C:\websites\dnndev.me\bin\DisplayCourse.pdb
+C:\websites\dnndev.me\DesktopModules\DisplayCourse\obj\Debug\DisplayCourse.csprojResolveAssemblyReference.cache
 C:\websites\dnndev.me\DesktopModules\DisplayCourse\obj\Debug\DisplayCourse.dll
 C:\websites\dnndev.me\DesktopModules\DisplayCourse\obj\Debug\DisplayCourse.pdb
-C:\websites\dnndev.me\DesktopModules\DisplayCourse\obj\Debug\DisplayCourse.csprojResolveAssemblyReference.cache

@@ -1,8 +1,8 @@
 ﻿<h3>DisplayCourse</h3>
 <p class="Contributor">
 	Plugghest.com <br />
-	<a href="mailto:modules@christoc.com">modules@christoc.com</a><br />
-	<a href=http://www.christoc.com>http://www.christoc.com</a><br />
+	<a href="mailto:modules@Plugghest.com">modules@Plugghest.com</a><br />
+	<a href=http://www.Plugghest.com>http://www.Plugghest.com</a><br />
 </p>
 <hr/>
 <div class="License">

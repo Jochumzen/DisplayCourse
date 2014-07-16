@@ -13,6 +13,42 @@ namespace Plugghest.Modules.DisplayCourse {
     public partial class View {
         
         /// <summary>
+        /// pnlDisplayInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlDisplayInfo;
+        
+        /// <summary>
+        /// hlDisplayInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlDisplayInfo;
+        
+        /// <summary>
+        /// pnlHideDisplayInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlHideDisplayInfo;
+        
+        /// <summary>
+        /// hlHideDisplayInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlHideDisplayInfo;
+        
+        /// <summary>
         /// pnlToCreationLanguage control.
         /// </summary>
         /// <remarks>
@@ -103,13 +139,22 @@ namespace Plugghest.Modules.DisplayCourse {
         protected global::System.Web.UI.WebControls.HyperLink hlExitEditMode;
         
         /// <summary>
-        /// phComponents control.
+        /// plEditPluggs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phComponents;
+        protected global::System.Web.UI.WebControls.PlaceHolder plEditPluggs;
+        
+        /// <summary>
+        /// hlEditPluggs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hlEditPluggs;
         
         /// <summary>
         /// lnkBeginCourse control.
@@ -119,5 +164,23 @@ namespace Plugghest.Modules.DisplayCourse {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink lnkBeginCourse;
+        
+        /// <summary>
+        /// lblNoPluggs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNoPluggs;
+        
+        /// <summary>
+        /// phComponents control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phComponents;
     }
 }

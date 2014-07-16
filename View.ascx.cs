@@ -48,6 +48,7 @@ namespace Plugghest.Modules.DisplayCourse
         public bool IsAuthorized;
         public int Edit;
         public int Translate;
+        public int DisplayInfo;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -63,8 +64,18 @@ namespace Plugghest.Modules.DisplayCourse
                 IsAuthorized = ((this.UserId != -1 && cc.TheCourse.WhoCanEdit == EWhoCanEdit.Anyone) || cc.TheCourse.CreatedByUserId == this.UserId || (UserInfo.IsInRole("Administator")));
                 Edit = !string.IsNullOrEmpty(Page.Request.QueryString["edit"]) ? Convert.ToInt16(Page.Request.QueryString["edit"]) : -1;
                 Translate = !string.IsNullOrEmpty(Page.Request.QueryString["translate"]) ? Convert.ToInt16(Page.Request.QueryString["translate"]) : -1;
+                DisplayInfo = !string.IsNullOrEmpty(Page.Request.QueryString["info"]) ? Convert.ToInt16(Page.Request.QueryString["info"]) : -1;
+                bool editOrTranslateMode = (Edit > -1 || Translate > -1) && UserId > -1;
 
                 #region hide/display controls
+                hlDisplayInfo.NavigateUrl = DotNetNuke.Common.Globals.NavigateURL(TabId, "", "info=0");
+                if (DisplayInfo == 0)
+                {
+                    pnlDisplayInfo.Visible = false;
+                    pnlHideDisplayInfo.Visible = true;
+                    hlHideDisplayInfo.NavigateUrl = DotNetNuke.Common.Globals.NavigateURL(TabId, "", "");
+                } 
+                
                 if (!InCreationLanguage && UserId > -1 && Translate == -1)
                 {
                     pnlToCreationLanguage.Visible = true;
@@ -91,9 +102,19 @@ namespace Plugghest.Modules.DisplayCourse
                     hlExitEditMode.NavigateUrl = DotNetNuke.Common.Globals.NavigateURL(TabId, "", "");
                 }
 
+
+                if (Edit == 0)
+                {
+                    plEditPluggs.Visible = true;
+                    hlEditPluggs.NavigateUrl = DotNetNuke.Common.Globals.NavigateURL(133, "", "c=" + CourseId); //"/PAndC/Edit-CP/c/" + CourseId;
+                }
+
                 cc.LoadPluggs();
                 if (cc.ThePluggs.Count == 0)
-                    lnkBeginCourse.Visible = false;
+                {
+                    lblNoPluggs.Visible = true;
+                    lnkBeginCourse.Enabled = false;
+                }
                 else
                 {
                     PluggContainer pc = new PluggContainer(CultureCode, cc.ThePluggs[0].PluggId);
@@ -103,7 +124,16 @@ namespace Plugghest.Modules.DisplayCourse
 
                 phComponents.Controls.Clear();
                 int controlOrder = 1;
-                bool editOrTranslateMode = (Edit > -1 || Translate > -1) && UserId > -1;
+
+                if (DisplayInfo == 0)
+                {
+                    DisplayCourseInfo ucDCI = (DisplayCourseInfo)this.LoadControl("/DesktopModules/DisplayCourse/DisplayCourseInfo.ascx");
+                    if (ucDCI != null)
+                    {
+                        ucDCI.LocalResourceFile = "/DesktopModules/DisplayCourse/App_LocalResources/DisplayCourseInfo.ascx";
+                        phComponents.Controls.Add(ucDCI);
+                    }
+                }
 
                 if (editOrTranslateMode)
                 {

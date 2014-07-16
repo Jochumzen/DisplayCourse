@@ -1,7 +1,7 @@
 ﻿<div class="License">
 	<h3>License</h3>
 	<p class="Owner">
-		Plugghest.com  <a href=http://www.christoc.com>http://www.christoc.com</a></br>
+		Plugghest.com  <a href=http://www.Plugghest.com>http://www.Plugghest.com</a></br>
 		Copyright (c) 2014</br>	
 		by Plugghest.com</br>
 	</p>

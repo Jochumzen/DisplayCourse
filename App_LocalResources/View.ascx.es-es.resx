@@ -129,11 +129,17 @@
   <data name="EditPlugg.Text" xml:space="preserve">
     <value>Editar Curso</value>
   </data>
+  <data name="EditPluggs.Text" xml:space="preserve">
+    <value>Editar Pluggs en ​​Curso</value>
+  </data>
   <data name="ExitEditMode.Text" xml:space="preserve">
     <value>Salir del modo de edición</value>
   </data>
   <data name="ExitTranslateMode.Text" xml:space="preserve">
     <value>Salir del modo Traducir</value>
+  </data>
+  <data name="NoPluggs.Text" xml:space="preserve">
+    <value>No hay Pluggs en ​​este curso. Si está autorizado, haga clic en "Editar Course" y luego en "Editar Pluggs en ​​curso".</value>
   </data>
   <data name="Subject.Text" xml:space="preserve">
     <value>Sujeto:</value>

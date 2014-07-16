@@ -138,6 +138,9 @@
   <data name="Description.Text" xml:space="preserve">
     <value>Course: Description</value>
   </data>
+  <data name="DisplayInfo.Text" xml:space="preserve">
+    <value>Display Course information</value>
+  </data>
   <data name="EditItem.Text" xml:space="preserve">
     <value>Edit</value>
   </data>
@@ -147,11 +150,20 @@
   <data name="EditPlugg.Text" xml:space="preserve">
     <value>Edit Course</value>
   </data>
+  <data name="EditPluggs.Text" xml:space="preserve">
+    <value>Edit Pluggs in Course</value>
+  </data>
   <data name="ExitEditMode.Text" xml:space="preserve">
     <value>Exit Edit mode</value>
   </data>
   <data name="ExitTranslateMode.Text" xml:space="preserve">
     <value>Exit Translate mode</value>
+  </data>
+  <data name="HideDisplayInfo.Text" xml:space="preserve">
+    <value>Hide Course information</value>
+  </data>
+  <data name="NoPluggs.Text" xml:space="preserve">
+    <value>There are no Pluggs in this course. If you are authorized, click "Edit Course" and then "Edit Pluggs in Course".</value>
   </data>
   <data name="Subject.Text" xml:space="preserve">
     <value>Subject:</value>
