@@ -76,6 +76,7 @@
     <Compile Include="Components\FeatureController.cs" />
     <Compile Include="DisplayCourseInfo.ascx.cs">
       <DependentUpon>DisplayCourseInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DisplayCourseInfo.ascx.designer.cs">
       <DependentUpon>DisplayCourseInfo.ascx</DependentUpon>

@@ -60,6 +60,8 @@ namespace Plugghest.Modules.DisplayCourse
                 CultureCode = (Page as DotNetNuke.Framework.PageBase).PageCulture.Name;
                 BaseHandler bh = new BaseHandler();
                 cc = new CourseContainer(CultureCode, CourseId);
+                if (cc.TheCourse.IsDeleted)
+                    Response.Redirect(DotNetNuke.Common.Globals.NavigateURL(Convert.ToInt32(Localization.GetString("TabCourseDeleted.Text", LocalResourceFile))));
                 InCreationLanguage = (cc.TheCourse.CreatedInCultureCode == CultureCode);
                 IsAuthorized = ((this.UserId != -1 && cc.TheCourse.WhoCanEdit == EWhoCanEdit.Anyone) || cc.TheCourse.CreatedByUserId == this.UserId || (UserInfo.IsInRole("Administator")));
                 Edit = !string.IsNullOrEmpty(Page.Request.QueryString["edit"]) ? Convert.ToInt16(Page.Request.QueryString["edit"]) : -1;

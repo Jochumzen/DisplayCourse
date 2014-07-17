@@ -168,6 +168,9 @@
   <data name="Subject.Text" xml:space="preserve">
     <value>Subject:</value>
   </data>
+  <data name="TabCourseDeleted.Text" xml:space="preserve">
+    <value>154</value>
+  </data>
   <data name="Title.Text" xml:space="preserve">
     <value>Course: Title</value>
   </data>
